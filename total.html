@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff5f6d, #ffc371);
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #ff5f6d;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact {
+      background: #ff5f6d;
+      color: white;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .contact h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #333;
+      color: #ddd;
+      text-align: center;
+      padding: 20px;
+    }
+
+    a {
+      color: #ffe082;
+      text-decoration: none;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      .contact {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Total Energy Ltd</h1>
+    <p>Powering Progress. Sustaining the Future.</p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>About Us</h2>
+      <p>Total Energy is a leading multinational energy company, committed to delivering clean, reliable and sustainable energy solutions across the globe. With operations in over 130 countries, we are powering millions of homes and businesses through innovation, responsibility, and care for the environment.</p>
+    </section>
+
+    <section>
+      <h2>Our Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Oil & Gas</h3>
+          <p>We explore and produce oil and gas responsibly, meeting global energy demands while minimizing our environmental impact.</p>
+        </div>
+        <div class="card">
+          <h3>Renewable Energy</h3>
+          <p>Investing in solar, wind, and bioenergy projects to ensure a green future and reduce carbon emissions.</p>
+        </div>
+        <div class="card">
+          <h3>EV Charging</h3>
+          <p>Building fast and reliable electric vehicle charging stations across major cities to support e-mobility.</p>
+        </div>
+        <div class="card">
+          <h3>Energy Solutions</h3>
+          <p>Customized energy solutions for industries, homes, and commercial clients to optimize energy use and efficiency.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Sustainability</h2>
+      <p>Our ambition is to become a net-zero emissions company by 2050. We are committed to reducing greenhouse gases, supporting biodiversity, and fostering local community development through education and infrastructure.</p>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <h3>Email:</h3>
+      <p><a href="mailto:info@totalenergy.com">info@totalenergy.com</a></p>
+      <h3>Phone:</h3>
+      <p>0745062167</p>
+      <h3>Head Office:</h3>
+      <p>Nairobi, Kenya - Energy Plaza, 7th Floor</p>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 Total Energy Ltd. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
+</body>
+</html>
