@@ -1,1 +1,157 @@
-dawa.html
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>dawa limeted company</title>
+</head>
+<body>
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dawa Limited</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+    }
+    header {
+      background: #198754;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #14532d;
+    }
+    nav button {
+      background: transparent;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    nav button:hover {
+      background: #198754;
+    }
+    .content {
+      padding: 20px;
+    }
+    .category {
+      display: none;
+    }
+    .medicine {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      margin: 10px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .medicine button {
+      background: #198754;
+      color: white;
+      border: none;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .medicine button:hover {
+      background: #14532d;
+    }
+    #cart {
+      margin-top: 20px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>💊 Dawa Limited</h1>
+    <p>Your trusted pharmacy online</p>
+  </header>
+
+  <nav>
+    <button onclick="showCategory('painkillers')">Painkillers</button>
+    <button onclick="showCategory('antibiotics')">Antibiotics</button>
+    <button onclick="showCategory('supplements')">Supplements</button>
+  </nav>
+
+  <div class="content">
+    <div id="painkillers" class="category">
+      <h2>Painkillers</h2>
+      <div class="medicine">
+        <h3>Paracetamol</h3>
+        <p>Price: $2</p>
+        <button onclick="addToCart('Paracetamol', 2)">Buy</button>
+        <button onclick="sellItem('Paracetamol', 2)">Sell</button>
+      </div>
+      <div class="medicine">
+        <h3>Ibuprofen</h3>
+        <p>Price: $3</p>
+        <button onclick="addToCart('Ibuprofen', 3)">Buy</button>
+        <button onclick="sellItem('Ibuprofen', 3)">Sell</button>
+      </div>
+    </div>
+    <div id="antibiotics" class="category">
+      <h2>Antibiotics</h2>
+      <div class="medicine">
+        <h3>Amoxicillin</h3>
+        <p>Price: $5</p>
+        <button onclick="addToCart('Amoxicillin', 5)">Buy</button>
+        <button onclick="sellItem('Amoxicillin', 5)">Sell</button>
+      </div>
+      <div class="medicine">
+        <h3>Azithromycin</h3>
+        <p>Price: $7</p>
+        <button onclick="addToCart('Azithromycin', 7)">Buy</button>
+        <button onclick="sellItem('Azithromycin', 7)">Sell</button>
+      </div>
+    </div>
+    <div id="supplements" class="category">
+      <h2>Supplements</h2>
+      <div class="medicine">
+        <h3>Vitamin C</h3>
+        <p>Price: $4</p>
+        <button onclick="addToCart('Vitamin C', 4)">Buy</button>
+        <button onclick="sellItem('Vitamin C', 4)">Sell</button>
+      </div>
+      <div class="medicine">
+        <h3>Omega 3</h3>
+        <p>Price: $6</p>
+        <button onclick="addToCart('Omega 3', 6)">Buy</button>
+        <button onclick="sellItem('Omega 3', 6)">Sell</button>
+      </div>
+    </div>
+    <div id="cart">
+      <h2>🛒 Shopping Cart</h2>
+      <ul id="cartItems"></ul>
+      <p><strong>Total: $<span id="total">0</span></strong></p>
+    </div>
+  </div>
+
+  <script>
+    let total = 6;
+
+    function showCategory(categoryId) {
+      let categories = document.querySelectorAll('.category');
+      categories.forEach(cat => cat.style.display = 'none');
+      document.getElementById(categoryId).style.display = 'block';
+    }
+
+    function addToCart(item, price) {
+      let cart = document.getElementById('cartItems');
+      let li = document.createElement('li');
+      li.textContent = `Bought: ${item} - $${price}`;
+</body>
+</html>
+
